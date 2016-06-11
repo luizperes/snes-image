@@ -11,8 +11,11 @@ RUN apt-get install -y g++
 RUN apt-get install -y nasm
 RUN apt-get install -y make
 RUN apt-get install -y git
+RUN apt-get install -y unzip
 
 RUN cd /home && git clone https://github.com/luizperes/snes-image.git 
+
+RUN cd /home/snes-image/dependencies && unzip wla_linux_binaries.zip -d wla
 
 
 
