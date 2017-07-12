@@ -10,8 +10,7 @@ This image supports __Assembly__ programming for Super Nintendo.
   
 Right now we should have [Docker](https://www.docker.com/) and a image for [Ubuntu 32 bits](https://github.com/docker-32bit/ubuntu) on your computer. Check it with the command: ```docker images```.
   
-  - If everything is fine, execute: ```cd /path/to/snes-image/``` 
-  - And then ```docker build -t snes .```. It may take one or two minutes.
+  - If everything is fine, execute: ```docker pull luizperes/snes:v1```. It may take one or two minutes.
   - Lastly, to execute your docker image, you can run the command: ```docker run -it snes linux32```. 
   - _Obs.: WLA is inside ```/home/snes-image/dependencies/wla```_
 

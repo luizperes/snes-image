@@ -13,3 +13,9 @@ RUN cd /home && git clone https://github.com/luizperes/snes-image.git
 
 RUN cd /home/snes-image/dependencies && unzip wla_linux_binaries.zip -d wla
 
+ENV PATH $PATH:/home/snes-image/dependencies/wla
+
+# COPY ./rom/* /home/snes-image/rom/
+# RUN cd /home/snes-image/rom && make
+
+
